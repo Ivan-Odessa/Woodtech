@@ -5004,6 +5004,14 @@
                 targetElem.classList.remove("_loading");
             } else alert("Что-то пошло не так!");
         }
+        const headerLink = document.querySelectorAll(".menu-header__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu-header__link--active");
+        }));
+        const scrollBtn = document.querySelector(".scroll-up");
+        window.addEventListener("scroll", (() => {
+            if (window.scrollY > 300) scrollBtn.classList.add("scroll-up--active"); else if (window.scrollY < 300) scrollBtn.classList.remove("scroll-up--active");
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
