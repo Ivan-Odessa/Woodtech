@@ -5004,9 +5004,15 @@
                 targetElem.classList.remove("_loading");
             } else alert("Что-то пошло не так!");
         }
+<<<<<<< HEAD
         const headerLink = document.querySelectorAll(".menu__link");
         headerLink.forEach((function(el) {
             if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+        const headerLink = document.querySelectorAll(".menu-header__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu-header__link--active");
+>>>>>>> 2f1a342212d8a8113eb4cabfab0be042b34e4bac
         }));
         const scrollBtn = document.querySelector(".scroll-up");
         window.addEventListener("scroll", (() => {
