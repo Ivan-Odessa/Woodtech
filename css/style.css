@@ -602,12 +602,11 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 1.1111111111em;
 }
 
 .title-decor {
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 1.1111111111em;
 }
 .title-decor::after {
   content: "";
@@ -989,9 +988,13 @@ body {
   height: 30px;
   background: url("../img/logo.png") no-repeat center;
 }
+.header__menu {
+  margin: 0 10px;
+}
 @media (max-width: 47.99875em) {
   .header__menu {
     order: 2;
+    margin: 0;
   }
 }
 
@@ -1037,8 +1040,29 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
   color: #fff;
+}
+@media (min-width: 71.875em) {
+  .menu__list {
+    gap: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 71.875em) {
+  @supports (gap: clamp( 0.625rem , 0.3840361446rem  +  1.2048192771vw , 1.25rem )) {
+    .menu__list {
+      gap: clamp( 0.625rem , 0.3840361446rem  +  1.2048192771vw , 1.25rem );
+    }
+  }
+  @supports not (gap: clamp( 0.625rem , 0.3840361446rem  +  1.2048192771vw , 1.25rem )) {
+    .menu__list {
+      gap: calc(0.625rem + 0.625 * (100vw - 20rem) / 51.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .menu__list {
+    gap: 0.625rem;
+  }
 }
 @media (max-width: 47.99875em) {
   .menu__list {
@@ -1297,6 +1321,9 @@ body {
     margin-bottom: 2em;
   }
 }
+.footer__menu-block {
+  flex: 1 1 auto;
+}
 
 .content-footer {
   flex: 0 1 21.5rem;
@@ -1330,9 +1357,8 @@ body {
   font-size: 0.8125rem;
   line-height: 1.6923076923;
 }
-
-.menu-block-footer {
-  flex: 1 1 auto;
+.content-footer__title {
+  margin-bottom: 1.1111111111em;
 }
 
 .spoller-item-footer {
@@ -1346,6 +1372,11 @@ body {
 }
 .spoller-item-footer__item {
   flex: 0 1 10.625rem;
+}
+@media (max-width: 61.99875em) {
+  .spoller-item-footer__item {
+    margin-bottom: 30px;
+  }
 }
 .spoller-item-footer__title {
   cursor: initial;
@@ -1377,9 +1408,12 @@ body {
     padding-left: 1.25rem;
   }
 }
+.spoller-item-footer__body {
+  margin-top: 20px;
+}
 @media (max-width: 61.99875em) {
   .spoller-item-footer__body {
-    margin-bottom: 2.5em;
+    margin: 20px 0px;
   }
 }
 
@@ -1398,6 +1432,9 @@ body {
 
 .social-footer {
   flex: 0 1 16.5625rem;
+}
+.social-footer__title {
+  margin-bottom: 1.1111111111em;
 }
 .social-footer__text {
   font-size: 0.8125rem;
@@ -1507,12 +1544,11 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 1.1111111111em;
 }
 
 .title-decor {
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 1.1111111111em;
 }
 .title-decor::after {
   content: "";

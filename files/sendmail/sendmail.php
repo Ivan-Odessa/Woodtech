@@ -1,7 +1,10 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 21ac4f09a012faa23bf4e81949c54d4aad2b18bb
+>>>>>>> 9823cae48c1f7618a4ec02980e98c9e86608322c
 <?php
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
@@ -55,6 +58,8 @@
 
 	header('Content-type: application/json');
 	echo json_encode($response);
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -113,4 +118,5 @@
 	echo json_encode($response);
 >>>>>>> 2f1a342212d8a8113eb4cabfab0be042b34e4bac
 >>>>>>> 21ac4f09a012faa23bf4e81949c54d4aad2b18bb
+>>>>>>> 9823cae48c1f7618a4ec02980e98c9e86608322c
 ?>
