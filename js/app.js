@@ -5009,10 +5009,16 @@
         headerLink.forEach((function(el) {
             if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
 =======
+<<<<<<< HEAD
+        const headerLink = document.querySelectorAll(".menu__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
         const headerLink = document.querySelectorAll(".menu-header__link");
         headerLink.forEach((function(el) {
             if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu-header__link--active");
 >>>>>>> 2f1a342212d8a8113eb4cabfab0be042b34e4bac
+>>>>>>> 21ac4f09a012faa23bf4e81949c54d4aad2b18bb
         }));
         const scrollBtn = document.querySelector(".scroll-up");
         window.addEventListener("scroll", (() => {
