@@ -5004,9 +5004,39 @@
                 targetElem.classList.remove("_loading");
             } else alert("Что-то пошло не так!");
         }
+<<<<<<< HEAD
         const headerLink = document.querySelectorAll(".menu__link");
         headerLink.forEach((function(el) {
             if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+<<<<<<< HEAD
+        const headerLink = document.querySelectorAll(".menu__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+<<<<<<< HEAD
+        const headerLink = document.querySelectorAll(".menu__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+<<<<<<< HEAD
+        const headerLink = document.querySelectorAll(".menu__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+<<<<<<< HEAD
+        const headerLink = document.querySelectorAll(".menu__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu__link--active");
+=======
+        const headerLink = document.querySelectorAll(".menu-header__link");
+        headerLink.forEach((function(el) {
+            if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) el.classList.toggle("menu-header__link--active");
+>>>>>>> 2f1a342212d8a8113eb4cabfab0be042b34e4bac
+>>>>>>> 21ac4f09a012faa23bf4e81949c54d4aad2b18bb
+>>>>>>> 9823cae48c1f7618a4ec02980e98c9e86608322c
+>>>>>>> b034153d8aaff34f17f12f0cd3e9002f8f5acf60
+>>>>>>> 99de1674f1006f6783141a3094c1a6e29cff0353
         }));
         const scrollBtn = document.querySelector(".scroll-up");
         window.addEventListener("scroll", (() => {
